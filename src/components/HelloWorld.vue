@@ -8,6 +8,8 @@
         >vue-cli documentation</a
       >.
     </p>
+    <!-- Headings need to be in descendant order -->
+    <h2>Here you can find some helpful links to get started</h2>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -149,6 +151,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  /* Adding contrast ration */
+  color: #0f804d;
 }
 </style>
