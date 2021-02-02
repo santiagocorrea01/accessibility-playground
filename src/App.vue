@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component
+export default class App extends Vue {
+  mounted() {
+    this.$emit("closeModal");
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -30,5 +41,11 @@
       color: #2044bf;
     }
   }
+}
+
+.u-noscroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 </style>
