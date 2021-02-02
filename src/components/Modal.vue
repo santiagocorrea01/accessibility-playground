@@ -90,6 +90,16 @@ export default class Modal extends Vue {
     this.initialFocus.focus();
     document.body.classList.remove("u-noscroll");
   }
+
+  /* If I used a div instead of a button I would have to add a tabindex of 0 on the div and run something like this:
+
+  document.onkeydown = function(e) {
+    if(e.keyCode === 13) { // The Enter/Return key
+      document.activeElement.click();
+    }
+  };
+
+  */
 }
 </script>
 
